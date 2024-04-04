@@ -1,38 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* login page css */
+#UserReg:hover{
+  transform: scale(1.01);
+  /* transform: skewY(10deg);
+  transform: skewX(20deg); */
+  transition: ease-in-out 1s;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#authTitle:hover{
+  color: #744c14;
+}
+
+#signIn {
+  filter: blur(0px);
+  height: auto;
+  animation-name: sign;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.animate{
+  animation-name: animateBtn;
+  animation-duration: .5s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes animateBtn {
+  50%{
+    transform: scale(1.1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* #Banner {
+  background-image: url("./Assets/Banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  filter: blur(5px);
 }
 
-.App-link {
-  color: #61dafb;
+#Banner:hover{
+  filter: blur(0px);
+  transition: ease-in-out .5s;
+  font-size: 60px;
+} */
+
+#AskHimBtn:hover{
+  transform: scale(.9);
+  transition: all ease-in-out .5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* #banner{
+  background-image: url("../src/Assets/home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+} */
